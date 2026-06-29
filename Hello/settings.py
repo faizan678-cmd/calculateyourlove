@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hdrnr4=1vkd4qpcw8s8dliul@z6vf%629g)9(w_pz1meema!zo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://calculateyourlove-production.up.railway.app/']
+ALLOWED_HOSTS = ['calculateyourlove-production.up.railway.app']
 
 
 # Application definition
