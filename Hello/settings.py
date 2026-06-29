@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-hdrnr4=1vkd4qpcw8s8dliul@z6vf%629g)9(w_pz1meema!zo
 DEBUG = False
 
 ALLOWED_HOSTS = ['calculateyourlove-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS=['https://calculateyourlove-production.up.railway.app']
 
 
 # Application definition
