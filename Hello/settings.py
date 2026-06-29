@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hdrnr4=1vkd4qpcw8s8dliul@z6vf%629g)9(w_pz1meema!zo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://calculateyourlove-production.up.railway.app/']
 
 
 # Application definition
