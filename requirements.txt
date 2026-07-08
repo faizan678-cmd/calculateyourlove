@@ -2,4 +2,4 @@
 gunicorn
 mcp[cli]>=1.9.0
 httpx
-uvicorn
+
