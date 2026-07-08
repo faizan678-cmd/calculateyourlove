@@ -1,9 +1,16 @@
 from mcp.server.fastmcp import FastMCP
+from mcp.server.streamable_http_manager import TransportSecuritySettings
 import httpx
 import os
 import uvicorn
 
-mcp = FastMCP("PhishBee")
+mcp = FastMCP(
+    "PhishBee",
+    transport_security=TransportSecuritySettings(
+        allowed_hosts=["*"],
+        allowed_origins=["*"],
+    ),
+)
 
 PHISHBEE_URL = "https://phishbee-io.up.railway.app"
 
@@ -21,7 +28,7 @@ async def check_url(url: str) -> str:
     except Exception as e:
         return f"Error: {str(e)}"
 
-if __name__ == "__main__":
+if name == "main":
     port = int(os.environ.get("PORT", 10000))
     uvicorn.run(
         mcp.streamable_http_app(),
