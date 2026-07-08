@@ -27,7 +27,7 @@ async def check_url(url: str) -> str:
     except Exception as e:
         return f"Error: {str(e)}"
 
-if name == "main":
+if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     uvicorn.run(
         mcp.streamable_http_app(),
